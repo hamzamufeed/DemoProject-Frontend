@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-xs-12">
+    <h1>{{ user.name }}</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <div class="col-sm-12 list-group-item clearfix">
+      <div class="pull-left">
+        <h4 class="list-group-item-heading">ID: {{ user.id }}</h4>
+      </div>
+    </div>
+    <div class="col-sm-12 list-group-item clearfix">
+      <div class="pull-left">
+        <h4 class="list-group-item-heading">Date of Birth: {{ user.birthDate }}</h4>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-primary" (click)="onEditUser()">Edit User</button> &nbsp;
+    <button class="btn btn-danger" (click)="onDeleteUser()">Delete User</button>
+  </div>
+</div>
